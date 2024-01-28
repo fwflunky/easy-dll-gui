@@ -38,3 +38,5 @@ dll.stopGui() # prints "1" and closes GUI
 ### ... or even Explorer
 
 ![3](https://i.ibb.co/hsZgnTx/image.png)
+
+kill me

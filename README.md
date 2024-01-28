@@ -14,16 +14,16 @@ import ctypes
 from ctypes import cdll
 
 dll = cdll.LoadLibrary('dllmenu.dll')
-dll.startGui() // prints "1" and shows GUI
+dll.startGui() # prints "1" and shows GUI
 
 str = '{"time":"07:08","method":"GET","status":"200","url":"https://example.com"}'
 bstr = str.encode('utf-8')
 dll.addData.argtypes = [ctypes.c_char_p, ctypes.c_int]
-dll.addData(bstr, len(str)) // adds row to GUI example
+dll.addData(bstr, len(str)) # adds row to GUI example
 
-dll.clearData() // clears all rows from GUI example
+dll.clearData() # clears all rows from GUI example
 
-dll.stopGui() // prints "1" and closes GUI
+dll.stopGui() # prints "1" and closes GUI
 
 ```
 
